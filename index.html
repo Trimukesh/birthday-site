@@ -1,163 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    
-    <title>Happy Birthday ❤️</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    
-    <link rel="stylesheet" href="style.css">
+<title>Happy Birthday Srivalli ❤️</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#ff4d94">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
 
 </head>
 
 <body>
-<div class="balloons">
-    <span>🎈</span>
-    <span>🎈</span>
-    <span>🎈</span>
-    <span>🎈</span>
-    <span>🎈</span>
-    <span>🎈</span>
-</div>
-    <!-- Loading Screen -->
-    <div id="loading">
-        <h1>Preparing Your Surprise... 🎁</h1>
-    </div>
 
-    <!-- Main Content -->
-    <div id="mainContent" class="hidden">
+<!-- ===========================
+LOADER
+=========================== -->
 
-        <section class="hero">
+<div id="loader">
 
-     <h1 id="typewriter"></h1>
+<div class="loader-content">
 
-            <p>
-                Today is all about you ❤️
-                Wishing you happiness, success,
-                laughter and endless memories.
-            </p>
+<h1>
 
-            <button id="surpriseBtn">
-                Open Your Surprise 🎁
-            </button>
+Happy Birthday
 
-        <!-- Surprise Section -->
+</h1>
 
-<section id="surprise" class="hidden">
+<h2>
 
-    <h2>❤️ Happy Birthday ❤️</h2>
+Srivalli ❤️
 
-    <p>
-        Wishing you endless happiness, laughter,
-        success, and lots of beautiful memories.
-        You deserve all the love in the world.
-    </p>
-
-    <audio id="birthdayMusic" controls>
-        <source src="music/birthday.mp3" type="audio/mp3">
-    </audio>
-<div class="giftBox" id="giftBox">
-
-    🎁
-
-    <p>Click Me</p>
-
-</div>
-
-<div id="giftMessage" class="hidden">
-
-    <h2>❤️ Surprise! ❤️</h2>
-
-    <p>
-        You make every moment special.
-        Happy Birthday!
-    </p>
-
-</div>
-    <!-- Gallery -->
-
-    <div class="gallery">
-
-        <img src="images/photo1.jpg">
-
-        <img src="images/photo2.jpg">
-
-        <img src="images/photo3.jpg">
-
-        <img src="images/photo4.jpg">
-
-    </div>
-
-    <!-- Timeline -->
-
-    <div class="timeline">
-
-        <div class="card">
-            ❤️ First Meeting
-        </div>
-
-        <div class="card">
-            🎉 Best Memories
-        </div>
-
-        <div class="card">
-            🌍 Adventures Together
-        </div>
-
-        <div class="card">
-            💖 Forever Friends
-        </div>
-
-    </div>
-
-    <!-- Cake -->
-
-    <div class="cake">
-
-        <div class="candle"></div>
-
-        <div class="cake-body"></div>
-
-    </div>
-
-    <h2 style="margin-top:40px;">
-        🎂 Make a Wish! 🎂
-    </h2>
-
-</section>
-
-    </div>
-
-    <script src="script.js"></script>
-<canvas id="fireworks"></canvas>
-</body>
-</html>
-<section class="finalWish">
-
-<h1>❤️ Thank You ❤️</h1>
+</h2>
 
 <p>
 
-May your life always be filled with happiness,
-
-love,
-
-success,
-
-good health,
-
-and beautiful memories.
-
-Happy Birthday once again!
-
-🎉🎂❤️
+Preparing something beautiful...
 
 </p>
 
+</div>
+
+</div>
+
+<!-- ===========================
+BACKGROUND
+=========================== -->
+
+<div id="stars"></div>
+
+<div id="hearts"></div>
+
+<div id="particles"></div>
+
+<!-- ===========================
+BACKGROUND MUSIC
+=========================== -->
+
+<audio
+id="music"
+loop>
+
+<source
+src="music/birthday.mp3"
+type="audio/mp3">
+
+</audio>
+
+<button id="musicBtn">
+
+🎵
+
+</button>
+
+<!-- ===========================
+HERO
+=========================== -->
+
+<section
+class="hero">
+
+<div class="hero-content">
+
+<img
+src="images/srivalli.jpg"
+class="profile">
+
+<h1>
+
+Happy Birthday
+
+</h1>
+
+<h2>
+
+Srivalli 🌸
+
+</h2>
+
+<p id="typing">
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#about">
+
+<button class="primaryBtn">
+
+Begin Journey ❤️
+
+</button>
+
+</a>
+
+<a href="#gallery">
+
+<button class="secondaryBtn">
+
+Memories 📸
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
 </section>
+
+<!-- ===========================
+ABOUT
+=========================== -->
+
+<section
+id="about">
+
+<h1>
+
+About You 🌸
+
+</h1>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="emoji">
+
+❤️
+
+</div>
+
+<h2>
+
+Kind Heart
+
+</h2>
+
+<p>
+
+Your kindness is one of the reasons people feel comfortable around you.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">
+
+🌼
+
+</div>
+
+<h2>
+
+Strong Mind
+
+</h2>
+
+<p>
+
+No matter how difficult life becomes,
+
+you keep moving forward.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">
+
+😊
+
+</div>
+
+<h2>
+
+Beautiful Smile
+
+</h2>
+
+<p>
+
+One smile from you
+
+can brighten someone's day.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">
+
+✨
+
+</div>
+
+<h2>
+
+Pure Soul
+
+</h2>
+
+<p>
+
+Stay exactly the way you are.
+
+The world needs more people like you.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+MEMORY GALLERY
+=========================== -->
+
+<section id="gallery">
+
+<h1 class="section-title">
+Our Small Memories 📸
+</h1>
+
+<p class="section-subtitle">
+Sometimes the smallest moments become
+the biggest memories.
+</p>
+
+<div class="gallery-container">
+
+<div class="gallery-card">
+
+<img src="images/drive1.jpg">
+
+<div class="gallery-text">
+
+<h2>
+🚗 Saturday Night Drives
+</h2>
+
+<p>
+
+Those random Saturday drives,
+without any special plan,
+became some of my favourite memories.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="images/food.jpg">
+
+<div class="gallery-text">
+
+<h2>
+🍲 Pulihora Conversations
+</h2>
+
+<p>
+
+Simple homemade food...
+Simple conversations...
+Yet unforgettable memories.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="images/office.jpg">
+
+<div class="gallery-text">
+
+<h2>
+☕ Office Talks
+</h2>
+
+<p>
+
+Busy work...
+Random conversations...
+Unexpected laughs.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="images/drive2.jpg">
+
+<div class="gallery-text">
+
+<h2>
+🌙 Late Night Rides
+</h2>
+
+<p>
+
+Some roads are beautiful,
+not because of the destination,
+but because of the company.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+TIMELINE
+=========================== -->
+
+<section id="timeline">
+
+<h1 class="section-title">
+
+Little Moments ❤️
+
+</h1>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="circle"></div>
+
+<div class="content">
+
+<h2>
+
+🚗 Saturday Drives
+
+</h2>
+
+<p>
+
+The rides that became a routine
+and later became memories.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="circle"></div>
+
+<div class="content">
+
+<h2>
+
+🍲 Pulihora
+
+</h2>
+
+<p>
+
+Food tastes better
+when shared with good people.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="circle"></div>
+
+<div class="content">
+
+<h2>
+
+☕ Office
+
+</h2>
+
+<p>
+
+Work wasn't always easy,
+but conversations made it lighter.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="circle"></div>
+
+<div class="content">
+
+<h2>
+
+😊 Smiles
+
+</h2>
+
+<p>
+
+Some smiles stay in memory
+longer than photographs.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+QUOTE
+=========================== -->
+
+<section id="quote">
+
+<div class="quote-box">
+
+<h1>
+
+"Some people become part of our life
+
+without making any noise...
+
+Yet they leave
+
+the most beautiful memories."
+
+</h1>
+
+<p>
+
+Thank you for being one of those people.
+
+🌸
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+LETTER
+=========================== -->
+
+<section id="letter">
+
+<div class="letter-card">
+
+<h1>💌 A Small Letter</h1>
+
+<p>
+
+Dear Srivalli,
+
+Today is not just another day...
+
+It is the day someone special came into this world.
+
+Life gives us many people,
+but only a few leave beautiful memories without even trying.
+
+Thank you for every smile,
+every conversation,
+every little memory.
+
+I genuinely wish that your life is filled with happiness,
+good health,
+peace,
+and countless reasons to smile.
+
+Never stop being the wonderful person you are.
+
+Happy Birthday once again. 🌸
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+FINAL WISH
+=========================== -->
+
+<section id="birthday">
+
+<div class="birthday-card">
+
+<h1>
+
+🎂 Happy Birthday Srivalli ❤️
+
+</h1>
+
+<p>
+
+May every dream find its way.
+
+May every tear become a smile.
+
+May every new year of your life
+bring more happiness than the previous one.
+
+Stay Happy.
+Stay Healthy.
+Stay Blessed.
+
+</p>
+
+<button id="surprise">
+
+✨ One Last Surprise
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+POPUP
+=========================== -->
+
+<div id="popup">
+
+<div class="popup-card">
+
+<h1>❤️</h1>
+
+<p>
+
+This website wasn't made
+to impress you.
+
+It wasn't made
+to expect anything from you.
+
+It was simply made because
+someone important to me
+deserves a beautiful birthday.
+
+Thank you
+for being part of some wonderful memories.
+
+Happy Birthday 🌸
+
+— Surya
+
+</p>
+
+<button id="closePopup">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+
+<p>
+
+Made with ❤️ by Surya
+
+</p>
+
+<p>
+
+Happy Birthday Once Again 🌸
+
+</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
