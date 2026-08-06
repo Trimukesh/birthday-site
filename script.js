@@ -103,7 +103,7 @@ document.getElementById("giftMessage").classList.remove("hidden");
 });
 
 
-const text="🎉 Happy Birthday Thikkala Rayudu ❤️";
+const text="🎉 Happy Birthday Valli ❤️";
 
 let i=0;
 
