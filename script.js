@@ -103,7 +103,7 @@ document.getElementById("giftMessage").classList.remove("hidden");
 });
 
 
-const text="🎉 Happy Birthday Valli ❤️";
+const text="🎉 Happy Birthday Valli ❤️ Surya";
 
 let i=0;
 
