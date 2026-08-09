@@ -73,21 +73,19 @@ BACKGROUND
 BACKGROUND MUSIC
 =========================== -->
 
-<audio
-id="music"
-loop>
-
-<source
-src="music/birthday.mp3"
-type="audio/mp3">
-
+<audio id="music" loop>
+    <source src="music/birthday.mp3" type="audio/mp3">
 </audio>
 
-<button id="musicBtn">
+<button id="musicBtn">🎵</button>
 
-🎵
+<script>
+const music = document.getElementById("music");
 
-</button>
+document.addEventListener("click", () => {
+    music.play();
+}, { once: true });
+</script>
 
 <!-- ===========================
 HERO
