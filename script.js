@@ -82,7 +82,14 @@ musicBtn.innerHTML="🎵";
 }
 
 });
-
+// Start music on the first click anywhere on the website
+document.addEventListener("click", () => {
+    if (!playing) {
+        music.play();
+        playing = true;
+        musicBtn.innerHTML = "⏸";
+    }
+}, { once: true });
 
 /* ==========================================
 POPUP
